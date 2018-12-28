@@ -1,7 +1,11 @@
 # Config files 
 
-redshift.conf,~/.config/redshift.conf
-.gitconfig,~/.gitconfig
+## Redshift
+
+$ ln -s ~/code/dotfiles/config-dotfiles/redshift.conf ~/.config/redshift.conf
+
+## Git
+$ ln -s ~/code/dotfiles/config-dotfiles/.gitconfig ~/.gitconfig
 
 # Themes
 
