@@ -7,6 +7,10 @@ $ ln -s ~/code/dotfiles/config-dotfiles/redshift.conf ~/.config/redshift.conf
 ## Git
 $ ln -s ~/code/dotfiles/config-dotfiles/.gitconfig ~/.gitconfig
 
+## Flake8
+
+$ ln -s ~/code/dotfiles/config-dotfiles/flake8 ~/.config/flake8
+
 # Themes
 
 ## Gnome shell theme
