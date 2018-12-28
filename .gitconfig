@@ -1,0 +1,32 @@
+[user]
+	email = enrique.manjavacas@gmail.com
+	name = Enrique Manjavacas
+[alias]
+	tree = log --graph --decorate --pretty=oneline --abbrev-commit
+	diffcsv = diff --word-diff
+[diff "csv"]
+	wordRegex = [^,\n]+[,\n]|[,]
+[color]
+	ui = true
+[diff "daff-csv"]
+	command = daff diff --git
+[merge "daff-csv"]
+	name = daff tabular csv merge
+	driver = daff merge --output %A %O %A %B
+[credential]
+	helper = cache --timeout=216000
+[push]
+	default = simple
+[diff "jupyternotebook"]
+	command = git-nbdiffdriver diff
+[merge "jupyternotebook"]
+	driver = git-nbmergedriver merge %O %A %B %L %P
+	name = jupyter notebook merge driver
+[difftool "nbdime"]
+	cmd = git-nbdifftool diff \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[mergetool "nbdime"]
+	cmd = git-nbmergetool merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+[mergetool]
+	prompt = false
